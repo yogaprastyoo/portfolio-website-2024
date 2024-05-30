@@ -1,0 +1,465 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);
+
+/* ALL */
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-weight: 400;
+	overflow-x: hidden;
+	background-color: white;
+	animation: body 4s ease-in-out;
+	font-family: Inter, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.container {
+	width: 90%;
+	margin: 1.5rem auto;
+}
+
+/**
+* Header Style.
+*/
+
+header {
+	display: inline;
+}
+
+/**
+* Headline Style.
+*/
+header .headline {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .headline .logo {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+header .headline .logo span {
+	font-weight: 700;
+}
+
+header .headline .message {
+	display: none;
+}
+
+header .headline .btn-group {
+	display: flex;
+	width: fit-content;
+}
+
+header .headline .btn-group button {
+	border: 1px solid #000;
+	border-radius: 100px;
+	background: 0 0;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: all ease-in-out 0.3s;
+}
+
+header .headline button:nth-child(1) {
+	padding: 0.5rem 1.62rem 0.5rem 1rem;
+}
+
+header .headline button:nth-child(2) {
+	padding: 0.5rem 1rem 0.5rem 1.62rem;
+	margin-left: -0.95rem;
+}
+
+header .headline .btn-group button:hover {
+	color: #fff;
+	background: #000;
+	transition: all ease-in-out 0.3s;
+}
+
+/**
+* Jumbotron Style.
+*/
+header .jumbotron {
+	margin-top: 2.5rem;
+	height: 70vh;
+}
+
+header .jumbotron h1 {
+	width: 90%;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 113%;
+}
+
+header .jumbotron p:nth-child(1) {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+header .jumbotron p span {
+	color: #b00000;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+header .jumbotron p:nth-child(3) {
+	margin-top: 3.5rem;
+	color: #5c5c5c;
+	font-size: 0.48rem;
+}
+
+header .jumbotron .link-to {
+	display: flex;
+	width: fit-content;
+}
+
+header .jumbotron .link-to button {
+	margin-top: 0.8rem;
+	cursor: pointer;
+}
+
+header .jumbotron .link-to button:nth-child(1) {
+	font-weight: 400;
+	font-family: Inter;
+	font-size: 0.75rem;
+	background: #ffffff;
+	border: 1px solid #000;
+	padding: 0.875rem 1.25rem;
+}
+
+header .jumbotron .link-to button:nth-child(2) {
+	padding: 0.9375rem 1rem;
+	background: #bfbfbf;
+	border: 1px solid #000;
+	border-left: none;
+}
+
+/**
+* Navigation Style.
+*/
+header nav {
+	top: 30px;
+	margin-top: -1rem !important;
+	display: flex;
+	position: sticky;
+	justify-content: center;
+	justify-items: center;
+}
+
+header nav ul {
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 1.3rem;
+	border-radius: 3.4375rem;
+	border: 1px solid #747474;
+	/* background: rgba(255, 255, 255, 0.12); */
+	/* backdrop-filter: blur(10px); */
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(6px);
+}
+
+header nav ul li {
+	display: block;
+	text-align: center;
+	/* width: 50px; */
+	cursor: pointer;
+}
+
+header nav ul li span {
+	color: #000;
+	font-family: Inter;
+	font-size: 0.8rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	transition: all 0.2s ease-in-out;
+}
+
+header nav ul li span:hover {
+	font-weight: 700;
+	transition: all 0.2s ease-in-out;
+}
+
+/**
+* Thank You Note Style.
+*/
+main #thank-you-note {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+main #thank-you-note h1 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 2rem;
+}
+
+main #thank-you-note h1 span {
+	font-weight: 700;
+}
+
+main #thank-you-note p {
+	margin-top: 1rem;
+	margin-left: 0.3rem;
+	font-size: 0.7;
+	font-weight: 400;
+	text-decoration-line: underline;
+}
+
+/**
+* Footer Style.
+*/
+footer {
+	clear: both;
+	padding: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+footer a {
+	color: #000;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+/**
+* ScrollTop Style.
+*/
+.scroll-top {
+	display: inline;
+	visibility: hidden;
+	position: relative;
+}
+
+.scroll-top button {
+	bottom: 0;
+	float: right;
+	border: none;
+	cursor: pointer;
+	position: sticky;
+	padding-bottom: 1rem;
+	background: transparent;
+}
+
+.scroll-top button svg {
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(9px);
+	border-radius: 100%;
+	width: 60px;
+	height: 60px;
+	transition: scale 100ms;
+}
+
+.scroll-top button:active svg {
+	scale: 0.8;
+}
+
+.maintenance {
+	height: 100vh;
+	padding-top: 8rem;
+}
+
+/**
+* Style (sm).
+*/
+@media (min-width: 640px) {
+	/**
+	* ALL.
+	*/
+	.container {
+		max-width: 640px;
+	}
+
+	/**
+	* Jumbotron Style.
+	*/
+	header .jumbotron {
+		display: flex;
+		height: 70vh;
+		margin-top: 1.5rem;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	/**
+	* Navigation Style.
+	*/
+	header nav ul {
+		width: 70%;
+	}
+}
+
+/**
+* Style (md).
+*/
+@media (min-width: 768px) {
+	/**
+	* ALL.
+	*/
+	.container {
+		max-width: 768px;
+	}
+
+	/**
+	* Navigation Style.
+	*/
+	header .jumbotron h1 {
+		font-size: 5rem;
+	}
+}
+
+/**
+* Style (lg).
+*/
+@media (min-width: 1024px) {
+	/**
+	* ALL.
+	*/
+	.container {
+		max-width: 924px;
+	}
+
+	/**
+	* Headline Style.
+	*/
+	header .headline .message {
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-weight: 400;
+		font-size: 0.95rem;
+	}
+
+	/**
+	* Jumbotron Style.
+	*/
+	header .jumbotron h1 {
+		font-size: 5.5rem;
+		max-width: 70%;
+	}
+
+	header .jumbotron p:nth-child(2) {
+		font-size: 1.5rem;
+	}
+
+	header .jumbotron p span {
+		font-size: 2rem;
+	}
+
+	/**
+  	* Navigation Style.
+  	*/
+	header nav ul {
+		width: 45%;
+		padding: 1.25rem 3.125rem;
+	}
+
+	header nav ul li span {
+		font-size: 1rem;
+	}
+
+	/**
+  	* Cursor Ring Style.
+  	*/
+	#cursor-ring {
+		position: fixed;
+		translate: -50% -50%;
+		width: 70px;
+		height: 70px;
+		mix-blend-mode: difference;
+		background-color: #fafafa;
+		border-radius: 50%;
+		pointer-events: none;
+		transition: scale 100ms;
+		animation: cursor 0.7s ease-in-out;
+		display: none;
+		z-index: 100;
+	}
+
+	#cursor-ring.active {
+		scale: 0.75;
+	}
+
+	@keyframes cursor {
+		0% {
+			opacity: 0;
+		}
+		99% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+}
+
+/**
+* Style (xl).
+*/
+@media (min-width: 1280px) {
+	/**
+	* ALL.
+	*/
+	.container {
+		max-width: 1220px;
+	}
+
+	/**
+	* Jumbotron Style.
+	*/
+	header .jumbotron h1 {
+		font-size: 5.5rem;
+		max-width: 50%;
+		font-weight: 400;
+	}
+}
+
+/**
+* Style (2xl).
+*/
+@media (min-width: 1536px) {
+	/**
+	* ALL.
+	*/
+	.container {
+		max-width: 1536px;
+	}
+
+	/**
+	* Jumbotron Style.
+	*/
+	header .jumbotron h1 {
+		margin-top: 12rem;
+		font-size: 7rem;
+	}
+
+	/**
+	* Navigation Style.
+	*/
+	header nav {
+		margin-top: 15rem !important;
+	}
+}
