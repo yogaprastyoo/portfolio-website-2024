@@ -1,158 +1,322 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>YogaPras. | Yoga Prastyo Bayu Laksono</title>
-		<meta name="author" content="Yoga Prastyo Bayu Laksono" />
-		<meta
-			name="description"
-			content="Hey there, I'm Yoga Prastyo Bayu Laksono, and you've just landed on my digital playground. Explore the world of innovative web solutions with me. Let's make your online dreams a reality!"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YogaPras.</title>
+    <meta name="author" content="Yoga Prastyo Bayu Laksono" />
+    <meta
+      name="description"
+      content="Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Fullstack Developer specializing in both front-end and back-end web development."
+    />
+    <meta
+      name="keywords"
+      content="Yoga Prastyo Bayu Laksono, Yoga Prastyo, YogaPras, Pras, portofolio , web developer, Fullstack Developer"
+    />
 
-		<!-- Style -->
-		<link rel="stylesheet" href="assets/css/style.css" />
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<!-- ***Headline*** -->
-				<div class="headline">
-					<h1 class="logo">Yoga<span>Pras.</span></h1>
-					<div class="message">
-						<ul>
-							<li>Welcome To<br />my web portfolio</li>
-						</ul>
-						<ul>
-							<li>Thank you<br />for visiting my website</li>
-						</ul>
-						<ul>
-							<li class="year"></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<button class="link-to" data-target-id="contact">Contact</button>
-						<button class="link-to" data-target-id="about">Me</button>
-					</div>
-				</div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.png" />
 
-				<!-- ***Jumbotron*** -->
-				<div class="jumbotron">
-					<h1>What are you looking for?</h1>
-					<p>Fullstack Devloper<span>.</span></p>
-					<p>Click the "Get started" button to scroll down</p>
-					<div class="link-to" data-target-id="thank-you-note">
-						<button>Get started</button>
-						<button aria-label="scroll-to-down">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="18"
-								viewBox="0 0 16 18"
-								fill="none"
-							>
-								<path
-									d="M7.89629 17.7676L15.1162 10.5477L14.0982 9.52965L8.61829 15.0023L8.61829 0.439777L7.1743 0.439777L7.1743 15.0023L1.69439 9.52965L0.676379 10.5477L7.89629 17.7676Z"
-									fill="black"
-								/>
-							</svg>
-						</button>
-					</div>
-				</div>
-			</div>
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="YogaPras - Portfolio of Yoga Prastyo Bayu Laksono"
+    />
+    <meta
+      property="og:description"
+      content="Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Fullstack Developer specializing in both front-end and back-end web development."
+    />
+    <meta
+      property="og:image"
+      content="https://yogaprastyo.site/assets/img/favicon.png"
+    />
+    <meta property="og:url" content="https://yogaprastyo.site/" />
+    <meta property="og:type" content="website" />
 
-			<!-- ***Navigation*** -->
-			<nav class="container">
-				<ul>
-					<li class="link-to" data-target-id="about">
-						<span>About</span>
-					</li>
-					<li class="link-to" data-target-id="skills">
-						<span>Skills</span>
-					</li>
-					<li class="link-to" data-target-id="project">
-						<span>Project</span>
-					</li>
-					<li class="link-to" data-target-id="contact">
-						<span>Contact</span>
-					</li>
-				</ul>
-			</nav>
-		</header>
+    <!-- ***Style*** -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- ***Header*** -->
+    <header>
+      <div class="container">
+        <!-- ***Headline*** -->
+        <div class="headline">
+          <h1 class="logo">Yoga<span>Pras.</span></h1>
+          <div class="message">
+            <ul>
+              <li>Welcome To<br />my web portfolio</li>
+            </ul>
+            <ul>
+              <li>Thank you<br />for visiting my website</li>
+            </ul>
+            <ul>
+              <li class="year"></li>
+            </ul>
+          </div>
+          <div class="btn-group">
+            <button class="link-to" data-target-id="contact">Contact</button>
+            <button class="link-to" data-target-id="about">Me</button>
+          </div>
+        </div>
 
-		<main class="container">
-			<!-- ***ThankYouNote Article*** -->
-			<article id="thank-you-note">
-				<h1>THANK YOU FOR VISITING MY <span>WEBSITE</span></h1>
-				<p id="date"></p>
-			</article>
+        <!-- ***Jumbotron*** -->
+        <div class="jumbotron">
+          <h1>What are you looking for?</h1>
+          <p>Fullstack Devloper<span>.</span></p>
+          <p>Click the "Get started" button to scroll down</p>
+          <div class="link-to" data-target-id="thank-you-note">
+            <button>Get started</button>
+            <button aria-label="scroll-to-down">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="18"
+                viewBox="0 0 16 18"
+                fill="none"
+              >
+                <path
+                  d="M7.89629 17.7676L15.1162 10.5477L14.0982 9.52965L8.61829 15.0023L8.61829 0.439777L7.1743 0.439777L7.1743 15.0023L1.69439 9.52965L0.676379 10.5477L7.89629 17.7676Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
 
-			<!-- ***About Article*** -->
-			<article class="maintenance" id="about">
-				<span id="section-first">01/</span>
-				<p>GET TO KNOW ME</p>
-			</article>
+      <!-- ***Navigation*** -->
+      <nav class="container">
+        <ul>
+          <li class="link-to" data-target-id="about">
+            <span>About</span>
+          </li>
+          <li class="link-to" data-target-id="skills">
+            <span>Skills</span>
+          </li>
+          <li class="link-to" data-target-id="project">
+            <span>Project</span>
+          </li>
+          <li class="link-to" data-target-id="contact">
+            <span>Contact</span>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-			<!-- ***Skills Article*** -->
-			<article class="maintenance" id="skills">
-				<span id="section-first">02/</span>
-				<p>SKILLS & TECHNOLOGIES</p>
-			</article>
+    <!-- ***Main*** -->
+    <main class="container">
+      <!-- ***ThankYouNote Article*** -->
+      <article id="thank-you-note">
+        <h1>THANK YOU FOR VISITING MY <span>WEBSITE</span></h1>
+        <p id="date"></p>
+      </article>
 
-			<!-- ***Project Article*** -->
-			<article class="maintenance" id="project">
-				<span id="section-first">03/</span>
-				<p>CHECK OUT MY LATEST WORK</p>
-			</article>
+      <!-- ***About Article*** -->
+      <article id="about">
+        <h1 class="title">
+          01/ <br />
+          GET TO KNOW ME
+        </h1>
+        <section class="profile">
+          <img src="assets/img/profile.jpg" alt="Yoga Prastyo Bayu Laksono" />
+          <p>Pras.</p>
+        </section>
+        <section class="badge-container">
+          <div class="badge">18y</div>
+          <div class="badge">Student</div>
+          <div class="badge">Web Dev</div>
+        </section>
+        <div class="desc">
+          Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Fullstack Developer
+          specializing in both front-end and back-end web development.
+          Passionate about creating dynamic, functional websites, I continuously
+          learn to stay updated with industry trends. Explore my portfolio to
+          see my work.
+        </div>
+      </article>
 
-			<!-- ***Contact Article*** -->
-			<article class="maintenance" id="contact">
-				<section>
-					<span id="section-fourth">04/</span>
-					<p>LET'S TURN IDEAS INTO REALITY</p>
-				</section>
-			</article>
+      <!-- ***Skills Article*** -->
+      <article id="skills">
+        <h1 class="title">
+          02/ <br />
+          SKILLS & TECHNOLOGIES
+        </h1>
+        <section class="badge-container">
+          <div class="badge">PHP</div>
+          <div class="badge">JavaScript</div>
+          <div class="badge">TypeScript</div>
+          <div class="badge">Node.js</div>
+          <div class="badge">Express.js</div>
+          <div class="badge">Laravel</div>
+          <div class="badge">Next.js</div>
+          <div class="badge">MySQL</div>
+          <div class="badge">MongoDB</div>
+          <div class="badge">Git</div>
+          <div class="badge">Docker</div>
+        </section>
 
-			<!-- ***ScrollTop*** -->
-			<div class="scroll-top">
-				<button aria-label="scroll-to-top">
-					<svg
-						width="100%"
-						height="100%"
-						viewBox="0 0 50 50"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<rect
-							x="0.5"
-							y="0.5"
-							width="97%"
-							height="97%"
-							rx="24.5"
-							fill=""
-							stroke="currentColor"
-						/>
-						<path
-							d="M25 16L17 23.5L18.128 24.5575L24.2 18.8725V34H25.8V18.8725L31.872 24.5575L33 23.5L25 16Z"
-							fill="currentColor"
-						/>
-					</svg>
-				</button>
-			</div>
-		</main>
+        <section class="learn">
+          <p>
+            Other Things <br />
+            I Want To Learn <span>:</span>
+          </p>
+          <div class="badge-container">
+            <div class="badge">Go</div>
+            <div class="badge">Java</div>
+            <div class="badge">C++</div>
+            <div class="badge">Vue</div>
+            <div class="badge">Nuxt.js</div>
+            <div class="badge">Spring Boot</div>
+          </div>
+        </section>
+      </article>
 
-		<!-- ***Footer*** -->
-		<footer>
-			<a href="https://www.instagram.com/aau.aah/" target="_blank">
-				Yoga Prastyo
-			</a>
-			<span class="year"></span> | ALL RIGHTS RESERVED ©
-		</footer>
+      <!-- ***Project Article*** -->
+      <article id="project">
+        <h1 class="title">
+          03/ <br />
+          CHECK OUT MY LATEST WORK
+        </h1>
+        <section>
+          <h2>Project LATEST</h2>
+          <div class="card">
+            <h3>01</h3>
+            <div class="desc">
+              <h4>Cashier</h4>
+              <p>
+                Building a POS website for the school coffee shop using Laravel
+                and Livewire.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <h3>02</h3>
+            <div class="desc">
+              <h4>Citizen Care</h4>
+              <p>
+                Developing Citizen Care using Laravel and Livewire to practice
+                these frameworks.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <h3>03</h3>
+            <div class="desc">
+              <h4>Anime List</h4>
+              <p>
+                Creating an Anime List using Next.js and DaisyUI to learn
+                Next.js.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <h3>04</h3>
+            <div class="desc">
+              <h4>Attendance</h4>
+              <p>
+                Building an attendance system with Laravel and Filament for a
+                student exchange with Vietnam.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <p>
+              LET'S TURN YOUR <br />
+              IDEAS INTO REALITY
+            </p>
+          </div>
+        </section>
+      </article>
 
-		<!-- ***CursorRing*** -->
-		<div id="cursor-ring"></div>
+      <!-- ***Contact Article*** -->
+      <article id="contact">
+        <h1 class="title">
+          04/ <br />
+          LET'S TURN IDEAS INTO REALITY
+        </h1>
+        <section class="sosmed-container">
+          <a
+            href="https://www.instagram.com/aau.aah"
+            target="_blank"
+            class="sosmed"
+          >
+            <p>Instagram</p>
+            <img
+              src="assets/img/icon-arrow-diagonal-up-right.svg"
+              alt="icon-arrow-diagonal-up-right"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" class="sosmed">
+            <p>Facebook</p>
+            <img
+              src="assets/img/icon-arrow-diagonal-up-right.svg"
+              alt="icon-arrow-diagonal-up-right"
+            />
+          </a>
+          <a href="https://www.linkedin.com/" target="_blank" class="sosmed">
+            <p>LinkedIn</p>
+            <img
+              src="assets/img/icon-arrow-diagonal-up-right.svg"
+              alt="icon-arrow-diagonal-up-right"
+            />
+          </a>
+          <a
+            href="https://github.com/yogaprastyoo"
+            target="_blank"
+            class="sosmed"
+          >
+            <p>Github</p>
+            <img
+              src="assets/img/icon-arrow-diagonal-up-right.svg"
+              alt="icon-arrow-diagonal-up-right"
+            />
+          </a>
+        </section>
+      </article>
 
-		<!-- Script -->
-		<script src="assets/js/script.js"></script>
-	</body>
+      <!-- ***ScrollTop*** -->
+      <div class="scroll-top">
+        <button aria-label="scroll-to-top">
+          <svg
+            id="scroll-top"
+            width="100%"
+            height="100%"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.5"
+              y="0.5"
+              width="97%"
+              height="97%"
+              rx="24.5"
+              fill=""
+              stroke="currentColor"
+            />
+            <path
+              d="M25 16L17 23.5L18.128 24.5575L24.2 18.8725V34H25.8V18.8725L31.872 24.5575L33 23.5L25 16Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+    </main>
+
+    <!-- ***Footer*** -->
+    <footer>
+      <a href="https://www.instagram.com/aau.aah/" target="_blank">
+        Yoga Prastyo
+      </a>
+      <span class="year"></span> | ALL RIGHTS RESERVED ©
+    </footer>
+
+    <!-- ***CursorRing*** -->
+    <div id="cursor-ring"></div>
+
+    <!-- ***Script*** -->
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

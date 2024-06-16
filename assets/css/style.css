@@ -1,465 +1,1044 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 /* ALL */
 *,
 ::after,
 ::before {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-decoration: none;
-	text-decoration: none;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
+  /* Reset */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+  /* Box Model */
+  box-sizing: border-box;
+
+  /* Scroll Behavior */
+  scroll-behavior: smooth;
+
+  /* Font Smoothing */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-	margin: 0;
-	padding: 0;
-	color: #000;
-	font-weight: 400;
-	overflow-x: hidden;
-	background-color: white;
-	animation: body 4s ease-in-out;
-	font-family: Inter, sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-webkit-tap-highlight-color: transparent;
+  /* Reset margin and padding */
+  margin: 0;
+  padding: 0;
+
+  /* Text color and font */
+  color: #000;
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+
+  /* Prevent horizontal overflow */
+  overflow-x: hidden;
+
+  /* Background color */
+  background-color: white;
+
+  /* Animation */
+  animation: body 4s ease-in-out;
+
+  /* Adjust text size for webkit */
+  -webkit-text-size-adjust: 100%;
+
+  /* Disable tap highlight color */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
-	width: 90%;
-	margin: 1.5rem auto;
+  /* Size */
+  width: 90%;
+
+  /* Spacing */
+  margin: 1.5rem auto;
 }
 
 /**
 * Header Style.
 */
-
 header {
-	display: inline;
+  /* Display */
+  display: inline;
 }
 
 /**
 * Headline Style.
 */
 header .headline {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header .headline .logo {
-	font-size: 1.5rem;
-	font-weight: 400;
+  /* Typography */
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 header .headline .logo span {
-	font-weight: 700;
+  /* Typography */
+  font-weight: 600;
 }
 
 header .headline .message {
-	display: none;
+  /* Display */
+  display: none;
 }
 
 header .headline .btn-group {
-	display: flex;
-	width: fit-content;
+  /* Layout */
+  display: flex;
+  width: fit-content;
 }
 
 header .headline .btn-group button {
-	border: 1px solid #000;
-	border-radius: 100px;
-	background: 0 0;
-	font-size: 0.9rem;
-	cursor: pointer;
-	transition: all ease-in-out 0.3s;
+  /* Font */
+  font-size: 0.9rem;
+
+  /* Border */
+  border: 1px solid #000;
+  border-radius: 100px;
+
+  /* Background */
+  background: 0 0;
+
+  /* Cursor */
+  cursor: pointer;
+
+  /* Transition */
+  transition: all ease-in-out 0.3s;
 }
 
 header .headline button:nth-child(1) {
-	padding: 0.5rem 1.62rem 0.5rem 1rem;
+  /* Spacing  */
+  padding: 0.5rem 1.62rem 0.5rem 1rem;
 }
 
 header .headline button:nth-child(2) {
-	padding: 0.5rem 1rem 0.5rem 1.62rem;
-	margin-left: -0.95rem;
+  /* Spacing */
+  margin-left: -0.95rem;
+  padding: 0.5rem 1rem 0.5rem 1.62rem;
 }
 
 header .headline .btn-group button:hover {
-	color: #fff;
-	background: #000;
-	transition: all ease-in-out 0.3s;
+  /* Color */
+  color: #ffffff;
+
+  /* Background */
+  background: #000;
+
+  /* Transition */
+  transition: all ease-in-out 0.3s;
 }
 
 /**
 * Jumbotron Style.
 */
 header .jumbotron {
-	margin-top: 2.5rem;
-	height: 70vh;
+  /* Spacing */
+  margin-top: 2.5rem;
+
+  /* Size */
+  height: 70vh;
 }
 
 header .jumbotron h1 {
-	width: 90%;
-	font-size: 4rem;
-	font-weight: 500;
-	line-height: 113%;
+  /* Size */
+  width: 90%;
+
+  /* Typography */
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 113%;
 }
 
 header .jumbotron p:nth-child(1) {
-	font-size: 1.5rem;
-	font-weight: 400;
+  /* Typography */
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 header .jumbotron p span {
-	color: #b00000;
-	font-size: 1.8rem;
-	font-weight: 700;
+  /* Typography */
+  color: #b00000;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 header .jumbotron p:nth-child(3) {
-	margin-top: 3.5rem;
-	color: #5c5c5c;
-	font-size: 0.48rem;
+  /* Spacing */
+  margin-top: 3.5rem;
+
+  /* Typography */
+  color: #5c5c5c;
+  font-size: 0.48rem;
 }
 
 header .jumbotron .link-to {
-	display: flex;
-	width: fit-content;
+  /* Layout */
+  display: flex;
+  width: fit-content;
 }
 
 header .jumbotron .link-to button {
-	margin-top: 0.8rem;
-	cursor: pointer;
+  /* Spacing */
+  margin-top: 0.8rem;
+
+  /* Cursor */
+  cursor: pointer;
 }
 
 header .jumbotron .link-to button:nth-child(1) {
-	font-weight: 400;
-	font-family: Inter;
-	font-size: 0.75rem;
-	background: #ffffff;
-	border: 1px solid #000;
-	padding: 0.875rem 1.25rem;
+  /* Typography */
+  font-weight: 400;
+  font-family: Inter;
+  font-size: 0.75rem;
+
+  /* Background and Border */
+  background: #ffffff;
+  border: 1px solid #000;
+
+  /* Padding */
+  padding: 0.875rem 1.25rem;
 }
 
 header .jumbotron .link-to button:nth-child(2) {
-	padding: 0.9375rem 1rem;
-	background: #bfbfbf;
-	border: 1px solid #000;
-	border-left: none;
+  /* Background and Border */
+  background: #bfbfbf;
+  border: 1px solid #000;
+  border-left: none;
+
+  /* Padding */
+  padding: 0.9375rem 1rem;
 }
 
 /**
 * Navigation Style.
 */
 header nav {
-	top: 30px;
-	margin-top: -1rem !important;
-	display: flex;
-	position: sticky;
-	justify-content: center;
-	justify-items: center;
+  /* Positioning */
+  position: sticky;
+  top: 30px;
+
+  /* Layout */
+  display: flex;
+  justify-content: center;
+
+  /* Spacing */
+  margin-top: -1rem !important;
 }
 
 header nav ul {
-	width: 90%;
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem 1.3rem;
-	border-radius: 3.4375rem;
-	border: 1px solid #747474;
-	/* background: rgba(255, 255, 255, 0.12); */
-	/* backdrop-filter: blur(10px); */
-	background: rgba(255, 255, 255, 0.8);
-	backdrop-filter: blur(6px);
+  /* Size */
+  width: 90%;
+
+  /* Layout */
+  display: flex;
+  justify-content: space-between;
+
+  /* Spacing and Border */
+  padding: 1rem 1.3rem;
+  border: 1px solid #747474;
+  border-radius: 3.4375rem;
+
+  /* Background and Effects */
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
 }
 
 header nav ul li {
-	display: block;
-	text-align: center;
-	/* width: 50px; */
-	cursor: pointer;
+  /* Layout */
+  display: block;
+  text-align: center;
+
+  /* Cursor */
+  cursor: pointer;
 }
 
 header nav ul li span {
-	color: #000;
-	font-family: Inter;
-	font-size: 0.8rem;
-	font-style: normal;
-	font-weight: 400;
-	line-height: normal;
-	transition: all 0.2s ease-in-out;
+  /* Typography */
+  font-family: Inter;
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #000;
+
+  /* Transition */
+  transition: all 0.2s ease-in-out;
 }
 
 header nav ul li span:hover {
-	font-weight: 700;
-	transition: all 0.2s ease-in-out;
+  /* Typography */
+  font-weight: 700;
+
+  /* Transition */
+  transition: all 0.2s ease-in-out;
+}
+
+/**
+* Main Style.
+*/
+main .title {
+  /* Typography */
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+main .maintenance {
+  /* Size */
+  height: 100vh;
+  max-width: 768px;
+
+  /* Spacing */
+  margin: 0 auto;
 }
 
 /**
 * Thank You Note Style.
 */
 main #thank-you-note {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  /* Layout */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* Border */
+  border-bottom: 1px dashed black;
 }
 
 main #thank-you-note h1 {
-	font-size: 1.8rem;
-	font-weight: 400;
-	line-height: 2rem;
+  /* Typography */
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
 main #thank-you-note h1 span {
-	font-weight: 700;
+  /* Typography */
+  font-weight: 700;
 }
 
 main #thank-you-note p {
-	margin-top: 1rem;
-	margin-left: 0.3rem;
-	font-size: 0.7;
-	font-weight: 400;
-	text-decoration-line: underline;
+  /* Spacing */
+  margin-top: 1rem;
+  margin-left: 0.3rem;
+
+  /* Typography */
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+
+/**
+* About Style.
+*/
+main #about {
+  /* Spacing */
+  margin: 0 auto;
+  padding-top: 7rem;
+
+  /* Size */
+  max-width: 768px;
+}
+
+main #about .profile {
+  /* Spacing */
+  padding: 1.5rem 0 1rem 0;
+
+  /* Layout */
+  display: flex;
+  align-items: center;
+}
+
+main #about .profile img {
+  /* Size and Shape */
+  width: 4rem;
+  border-radius: 0.5rem;
+
+  /* Spacing */
+  margin-right: 1.5rem;
+}
+
+main #about .profile p {
+  /* Typography */
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+main #about .badge-container {
+  /* Layout */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+main #about .badge {
+  /* Layout */
+  display: inline-flex;
+  border-radius: 6px;
+  align-items: center;
+
+  /* Typography */
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  color: #404040;
+
+  /* Spacing */
+  padding: 0.125rem 0.625rem;
+
+  /* Background */
+  background-color: #f5f5f5;
+}
+
+main #about .desc {
+  /* Spacing */
+  margin-top: 1rem;
+
+  /* Typography */
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #52525b;
+}
+
+/**
+* Skills Style.
+*/
+main #skills {
+  /* Spacing */
+  margin: 0 auto;
+  padding-top: 7rem;
+
+  /* Size */
+  max-width: 768px;
+}
+
+main #skills section {
+  /* Spacing */
+  padding: 1.5rem 0 1rem 0;
+}
+
+main #skills .badge-container {
+  /* Layout */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+main #skills .badge {
+  /* Padding and Border */
+  padding: 0.375rem 0.75rem;
+  border: 1px solid #a7a7a7;
+  border-radius: 50px;
+
+  /* Typography */
+  font-size: 0.75rem;
+  line-height: 1.3rem;
+  font-weight: 600;
+
+  /* Cursor and Transition */
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+
+main #skills .badge:hover {
+  /* Border and Background on Hover */
+  border-radius: 0px;
+  border: 1px solid #ffffff;
+  background: #000;
+
+  /* Text Color */
+  color: #fff;
+}
+
+main #skills .learn {
+  /* Spacing */
+  padding-top: 1rem;
+
+  /* Border */
+  border-top: 1px dotted #000;
+}
+
+main #skills .learn p {
+  /* Typography */
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+}
+
+main #skills .learn p span {
+  /* Typography */
+  font-weight: 300;
+}
+
+main #skills .learn .badge-container {
+  /* Spacing */
+  margin-top: 1rem;
+}
+
+/**
+* Project Style.
+*/
+main #project {
+  /* Spacing */
+  margin: 0 auto;
+  padding-top: 7rem;
+
+  /* Size */
+  max-width: 768px;
+}
+
+main #project section {
+  /* Layout */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+
+  /* Spacing */
+  padding: 1.5rem 0 1rem 0;
+}
+
+main #project section h2 {
+  /* Size and Shape */
+  width: 15.5rem;
+  height: fit-content;
+  border-radius: 1.5rem;
+  padding-bottom: 1rem;
+
+  /* Typography */
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+main #project section .card {
+  /* Size and Shape */
+  width: 48%;
+  height: 10rem;
+  border-radius: 1.5rem;
+  padding: 1rem;
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* Background */
+  background: #e6e6e6;
+}
+
+main #project section .card h3 {
+  /* Size and Shape */
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+
+  /* Background and Text */
+  background: #000;
+  color: #fff;
+
+  /* Typography */
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+main #project section .card h4 {
+  /* Typography */
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+main #project section .card p {
+  /* Typography */
+  font-size: 0.5rem;
+  line-height: 0.8rem;
+}
+
+main #project section .card:last-child {
+  /* Layout */
+  display: none;
+
+  /* Background */
+  background: #ffffff;
+
+  /* Typography */
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+/**
+* Contact Style.
+*/
+main #contact {
+  /* Spacing */
+  margin: 0 auto;
+  padding-top: 7rem;
+
+  /* Size */
+  max-width: 768px;
+}
+
+main #contact .sosmed-container {
+  /* Spacing */
+  margin-top: 3rem;
+
+  /* Size */
+  height: 45vh;
+}
+
+main #contact .sosmed-container > * + * {
+  /* Size */
+  width: 100%;
+
+  /* Border */
+  border-top: 1px solid rgb(209, 213, 219);
+}
+
+main #contact .sosmed-container .sosmed {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* Spacing */
+  padding: 1rem 1rem;
+}
+
+main #contact .sosmed-container .sosmed p {
+  /* Typography */
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  /* Color */
+  color: #000;
+
+  /* Transition */
+  transition: all ease-in-out 0.3s;
+}
+
+main #contact .sosmed-container .sosmed img {
+  /* Size */
+  width: 2rem;
+
+  /* Transition */
+  transition: all ease-in-out 0.3s;
+}
+
+main #contact .sosmed:nth-child(1):hover p,
+main #contact .sosmed:nth-child(2):hover p,
+main #contact .sosmed:nth-child(3):hover p,
+main #contact .sosmed:nth-child(4):hover p {
+  /* Typography on Hover */
+  font-size: 2rem;
+}
+
+main #contact .sosmed:nth-child(1):hover img,
+main #contact .sosmed:nth-child(2):hover img,
+main #contact .sosmed:nth-child(3):hover img,
+main #contact .sosmed:nth-child(4):hover img {
+  /* Size and Transformation on Hover */
+  width: 2.5rem;
+  transform: rotate(45deg);
 }
 
 /**
 * Footer Style.
 */
 footer {
-	clear: both;
-	padding: 1rem;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 0.8rem;
+  /* Clear floating elements */
+  clear: both;
+
+  /* Padding */
+  padding: 1rem;
+
+  /* Typography */
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 footer a {
-	color: #000;
+  /* Typography */
+  color: #000;
 }
 
 footer a:hover {
-	text-decoration: underline;
+  /* Typography */
+  text-decoration: underline;
 }
 
 /**
 * ScrollTop Style.
 */
 .scroll-top {
-	display: inline;
-	visibility: hidden;
-	position: relative;
+  /* Display */
+  display: inline;
+  visibility: hidden;
+
+  /* Positioning */
+  position: relative;
 }
 
 .scroll-top button {
-	bottom: 0;
-	float: right;
-	border: none;
-	cursor: pointer;
-	position: sticky;
-	padding-bottom: 1rem;
-	background: transparent;
+  /* Positioning */
+  bottom: 0;
+  float: right;
+  position: sticky;
+
+  /* Padding */
+  padding-bottom: 1rem;
+
+  /* Border and Background */
+  border: none;
+  background: transparent;
+
+  /* Cursor */
+  cursor: pointer;
 }
 
 .scroll-top button svg {
-	background: rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(9px);
-	border-radius: 100%;
-	width: 60px;
-	height: 60px;
-	transition: scale 100ms;
+  /* Size and Shape */
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+
+  /* Background and Effect */
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(9px);
+
+  /* Transition */
+  transition: scale 100ms;
 }
 
 .scroll-top button:active svg {
-	scale: 0.8;
+  /* Transform */
+  transform: scale(0.8);
 }
 
-.maintenance {
-	height: 100vh;
-	padding-top: 8rem;
+/**
+* Style (xs).
+*/
+@media only screen and (min-width: 0px) and (max-width: 330px) {
+  main #project section .card {
+    /* Size */
+    width: 100%;
+    height: 10rem;
+  }
+
+  main #project section .card h4 {
+    /* Typography */
+    font-size: 1rem;
+  }
+
+  main #project section .card p {
+    /* Typography */
+    font-size: 0.75rem;
+  }
+
+  header nav ul {
+    /* Size */
+    width: 20rem;
+  }
+}
+
+/**
+* Style (2xs).
+*/
+@media (min-width: 558px) {
+  /**
+	* ALL.
+	*/
+  .container {
+    /* Size */
+    max-width: 640px;
+  }
+
+  /**
+	* Jumbotron Style.
+	*/
+  header .jumbotron {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Size */
+    height: 70vh;
+
+    /* Margin */
+    margin-top: 1.5rem;
+  }
+
+  header .jumbotron h1 {
+    /* Size */
+    max-width: 90%;
+
+    /* Typography */
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+
+  header .jumbotron p:nth-child(2) {
+    /* Typography */
+    font-size: 1.24rem;
+  }
+
+  header .jumbotron p span {
+    /* Typography */
+    font-size: 1.74rem;
+  }
+
+  /**
+  	* Navigation Style.
+  	*/
+  header nav ul {
+    /* Size */
+    max-width: 500px;
+
+    /* Padding */
+    padding: 1.25rem 3.125rem;
+  }
+
+  header nav ul li span {
+    /* Typography */
+    font-size: 1rem;
+  }
+
+  /**
+  	* Project Style.
+  	*/
+  main #project section .card h3 {
+    /* Typography */
+    font-size: 0.775rem;
+  }
+
+  main #project section .card h4 {
+    /* Typography */
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+
+  main #project section .card p {
+    /* Typography */
+    font-size: 0.65rem;
+    line-height: 1rem;
+  }
+
+  main #project section .card:last-child {
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /**
 * Style (sm).
 */
 @media (min-width: 640px) {
-	/**
+  /**
 	* ALL.
 	*/
-	.container {
-		max-width: 640px;
-	}
+  .container {
+    /* Size */
+    max-width: 1220px;
+  }
 
-	/**
+  /**
 	* Jumbotron Style.
 	*/
-	header .jumbotron {
-		display: flex;
-		height: 70vh;
-		margin-top: 1.5rem;
-		flex-direction: column;
-		justify-content: center;
-	}
+  header .jumbotron h1 {
+    /* Typography */
+    font-size: 5rem;
+  }
 
-	/**
-	* Navigation Style.
-	*/
-	header nav ul {
-		width: 70%;
-	}
+  header .jumbotron p:nth-child(2) {
+    /* Typography */
+    font-size: 1.38rem;
+  }
+
+  header .jumbotron p span {
+    /* Typography */
+    font-size: 1.88rem;
+  }
+
+  /**
+  * Project Style.
+  */
+  main #project section h2,
+  main #project section .card {
+    /* Size */
+    width: 31.9%;
+    height: 11rem;
+  }
+
+  main #project section .card {
+    /* Padding */
+    padding: 1.5rem;
+  }
+
+  main #project section .card h3 {
+    /* Typography */
+    font-size: 0.775rem;
+  }
+
+  main #project section .card h4 {
+    /* Typography */
+    font-size: 0.9rem;
+    line-height: 2rem;
+  }
+
+  main #project section .card p {
+    /* Typography */
+    font-size: 0.65rem;
+    line-height: 1rem;
+  }
 }
 
 /**
 * Style (md).
 */
 @media (min-width: 768px) {
-	/**
-	* ALL.
+  /**
+	* Headline Style.
 	*/
-	.container {
-		max-width: 768px;
-	}
+  header .headline .message {
+    /* Size */
+    width: 50%;
 
-	/**
-	* Navigation Style.
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* Typography */
+    font-weight: 400;
+    font-size: 0.95rem;
+  }
+
+  /**
+	* Jumbotron Style.
 	*/
-	header .jumbotron h1 {
-		font-size: 5rem;
-	}
+  header .jumbotron h1 {
+    /* Size */
+    max-width: 80%;
+
+    /* Typography */
+    font-size: 5.5rem;
+  }
+
+  header .jumbotron p:nth-child(2) {
+    /* Typography */
+    font-size: 1.5rem;
+  }
+
+  header .jumbotron p span {
+    /* Typography */
+    font-size: 2rem;
+  }
+
+  /**
+  	* Project Style.
+  	*/
+  main #project section h2,
+  main #project section .card {
+    /* Size */
+    width: 32%;
+    height: 12rem;
+  }
+
+  main #project section .card h3 {
+    /* Typography */
+    font-size: 0.875rem;
+  }
+
+  main #project section .card h4 {
+    /* Typography */
+    font-size: 1rem;
+  }
+
+  main #project section .card p {
+    /* Typography */
+    font-size: 0.75rem;
+  }
 }
 
 /**
 * Style (lg).
 */
 @media (min-width: 1024px) {
-	/**
-	* ALL.
-	*/
-	.container {
-		max-width: 924px;
-	}
-
-	/**
-	* Headline Style.
-	*/
-	header .headline .message {
-		width: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		font-weight: 400;
-		font-size: 0.95rem;
-	}
-
-	/**
+  /**
 	* Jumbotron Style.
 	*/
-	header .jumbotron h1 {
-		font-size: 5.5rem;
-		max-width: 70%;
-	}
+  header .jumbotron h1 {
+    /* Size */
+    max-width: 65%;
+  }
 
-	header .jumbotron p:nth-child(2) {
-		font-size: 1.5rem;
-	}
-
-	header .jumbotron p span {
-		font-size: 2rem;
-	}
-
-	/**
-  	* Navigation Style.
-  	*/
-	header nav ul {
-		width: 45%;
-		padding: 1.25rem 3.125rem;
-	}
-
-	header nav ul li span {
-		font-size: 1rem;
-	}
-
-	/**
+  /**
   	* Cursor Ring Style.
   	*/
-	#cursor-ring {
-		position: fixed;
-		translate: -50% -50%;
-		width: 70px;
-		height: 70px;
-		mix-blend-mode: difference;
-		background-color: #fafafa;
-		border-radius: 50%;
-		pointer-events: none;
-		transition: scale 100ms;
-		animation: cursor 0.7s ease-in-out;
-		display: none;
-		z-index: 100;
-	}
+  #cursor-ring {
+    /* Positioning */
+    position: fixed;
+    translate: -50% -50%;
+    z-index: 100;
 
-	#cursor-ring.active {
-		scale: 0.75;
-	}
+    /* Size */
+    width: 70px;
+    height: 70px;
 
-	@keyframes cursor {
-		0% {
-			opacity: 0;
-		}
-		99% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
+    /* Visuals */
+    mix-blend-mode: difference;
+    background-color: #fafafa;
+    border-radius: 50%;
+
+    /* Interaction */
+    pointer-events: none;
+
+    /* Animation */
+    transition: scale 100ms;
+    animation: cursor 0.7s ease-in-out;
+
+    /* Display */
+    display: none;
+  }
+
+  #cursor-ring.active {
+    /* Transform */
+    scale: 0.75;
+  }
+
+  @keyframes cursor {
+    0% {
+      opacity: 0;
+    }
+    99% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 /**
 * Style (xl).
 */
 @media (min-width: 1280px) {
-	/**
-	* ALL.
-	*/
-	.container {
-		max-width: 1220px;
-	}
-
-	/**
+  /**
 	* Jumbotron Style.
 	*/
-	header .jumbotron h1 {
-		font-size: 5.5rem;
-		max-width: 50%;
-		font-weight: 400;
-	}
-}
-
-/**
-* Style (2xl).
-*/
-@media (min-width: 1536px) {
-	/**
-	* ALL.
-	*/
-	.container {
-		max-width: 1536px;
-	}
-
-	/**
-	* Jumbotron Style.
-	*/
-	header .jumbotron h1 {
-		margin-top: 12rem;
-		font-size: 7rem;
-	}
-
-	/**
-	* Navigation Style.
-	*/
-	header nav {
-		margin-top: 15rem !important;
-	}
+  header .jumbotron h1 {
+    /* Size */
+    max-width: 50%;
+  }
 }

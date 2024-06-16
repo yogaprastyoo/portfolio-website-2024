@@ -2,13 +2,13 @@
 const goto = (id) => document.getElementById(id).scrollIntoView();
 
 document.addEventListener("click", (e) => {
-	const target = e.target.closest(".link-to");
-	if (target) {
-		const targetId = target.dataset.targetId;
-		if (targetId) {
-			goto(targetId);
-		}
-	}
+  const target = e.target.closest(".link-to");
+  if (target) {
+    const targetId = target.dataset.targetId;
+    if (targetId) {
+      goto(targetId);
+    }
+  }
 });
 
 // ** Cursor Ring **
@@ -17,32 +17,32 @@ const easingFactor = 0.2;
 let isMouseMoving = false;
 
 function showCursor() {
-	cursorRing.style.display = "block";
-	document.addEventListener("mousemove", onMouseMove);
+  cursorRing.style.display = "block";
+  document.addEventListener("mousemove", onMouseMove);
 }
 
 function onMouseMove(e) {
-	targetX = e.clientX;
-	targetY = e.clientY;
-	isMouseMoving = true;
+  targetX = e.clientX;
+  targetY = e.clientY;
+  isMouseMoving = true;
 }
 
 function updateCursor() {
-	if (isMouseMoving) {
-		const currentX = parseFloat(cursorRing.style.left) || 0;
-		const currentY = parseFloat(cursorRing.style.top) || 0;
-		const deltaX = (targetX - currentX) * easingFactor;
-		const deltaY = (targetY - currentY) * easingFactor;
-		cursorRing.style.left = `${currentX + deltaX}px`;
-		cursorRing.style.top = `${currentY + deltaY}px`;
+  if (isMouseMoving) {
+    const currentX = parseFloat(cursorRing.style.left) || 0;
+    const currentY = parseFloat(cursorRing.style.top) || 0;
+    const deltaX = (targetX - currentX) * easingFactor;
+    const deltaY = (targetY - currentY) * easingFactor;
+    cursorRing.style.left = `${currentX + deltaX}px`;
+    cursorRing.style.top = `${currentY + deltaY}px`;
 
-		isMouseMoving = Math.abs(deltaX) > 0.1 || Math.abs(deltaY) > 0.1;
-	}
-	requestAnimationFrame(updateCursor);
+    isMouseMoving = Math.abs(deltaX) > 0.1 || Math.abs(deltaY) > 0.1;
+  }
+  requestAnimationFrame(updateCursor);
 }
 
 function toggleCursor() {
-	cursorRing.classList.toggle("active");
+  cursorRing.classList.toggle("active");
 }
 
 document.addEventListener("mouseenter", showCursor);
@@ -52,22 +52,22 @@ document.addEventListener("mouseup", toggleCursor);
 updateCursor();
 
 // ** Scroll to Top Button **
-const buttonScrollToTop = document.querySelector(".scroll-top");
+const buttonScrollToTop = document.getElementById("scroll-top");
 
 document.addEventListener("scroll", function () {
-	if (window.scrollY > window.innerHeight * 0.9) {
-		buttonScrollToTop.style.visibility = "visible";
-	} else {
-		buttonScrollToTop.style.visibility = "hidden";
-	}
+  if (window.scrollY > window.innerHeight * 0.9) {
+    buttonScrollToTop.style.visibility = "visible";
+  } else {
+    buttonScrollToTop.style.visibility = "hidden";
+  }
 });
 
 buttonScrollToTop.addEventListener("click", () => {
-	buttonScrollToTop.classList.add("active");
-	window.scrollTo({
-		top: 0,
-		behavior: "smooth",
-	});
+  buttonScrollToTop.classList.add("active");
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
 
 // ** Date Display **
@@ -82,5 +82,5 @@ const yearElements = document.querySelectorAll(".year");
 dateElement.innerText = `${day}. ${month}. ${year}`;
 
 yearElements.forEach((element) => {
-	element.textContent = year;
+  element.textContent = year;
 });
