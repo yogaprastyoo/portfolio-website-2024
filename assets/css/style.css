@@ -628,6 +628,9 @@ main #contact .sosmed-container .sosmed img {
 
   /* Transition */
   transition: all ease-in-out 0.3s;
+
+  /* User select */
+  user-select: none;
 }
 
 main #contact .sosmed:nth-child(1):hover p,
