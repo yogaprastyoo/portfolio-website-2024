@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /assets/js/
+Disallow: /assets/css/
 
-Sitemap: https://yogaprastyo.site/sitemap.xml
+# Sitemap
+Sitemap: https://yogaprastyo.com/sitemap.xml
+
+# Crawl-delay (optional - for politeness)
+Crawl-delay: 1

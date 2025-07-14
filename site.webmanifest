@@ -1,22 +1,47 @@
 {
-  "name": "Yoga Prastyo Portfolio",
-  "short_name": "Yoga Portfolio",
-  "start_url": "/",
-  "scope": "/",
-  "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "icons": [
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+    "name": "Yoga Prastyo | Full Stack Developer Portfolio",
+    "short_name": "Yoga Prastyo",
+    "description": "Portfolio website of Yoga Prastyo Bayu Laksono - Full Stack Developer specializing in JavaScript, PHP, Laravel, and Next.js",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "categories": ["portfolio", "developer", "business"],
+    "lang": "id",
+    "dir": "ltr",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Yoga Prastyo Portfolio Homepage"
+        }
+    ]
 }

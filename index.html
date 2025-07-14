@@ -1,300 +1,458 @@
 <!DOCTYPE html>
-<html lang="in">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="canonical" href="https://yogaprastyo.com" />
-		<title>Yoga Prastyo - Portfolio of Yoga Prastyo Bayu Laksono</title>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://yogaprastyo.com" />
+        <title>Yoga Prastyo | Full Stack Developer Portfolio - Yoga Prastyo Bayu Laksono</title>
 
-		<!-- Favicon -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-		<meta name="theme-color" content="#ffffff" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
 
-		<!-- Default Meta Tags -->
-		<meta name="author" content="Yoga Prastyo Bayu Laksono" />
-		<meta
-			name="keywords"
-			content="Yoga Prastyo, YogaPras, Yoga Prastyo Bayu Laksono, Pras, Portfolio, Web Developer, Fullstack Developer"
-		/>
-		<meta
-			name="description"
-			content="Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Full Stack Developer specializing in both front-end and back-end web development. Passionate about creating dynamic, functional websites, I continuously learn to stay updated with industry trends. Explore my portfolio to see my work."
-		/>
+        <meta name="author" content="Yoga Prastyo Bayu Laksono" />
+        <meta
+            name="description"
+            content="Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Full Stack Developer with expertise in both front-end and back-end web development. With hands-on experience in Laravel, React, JavaScript, and system programming using C++ and ROS, I am eager to contribute to innovative projects and grow as a versatile software engineer."
+        />
 
-		<!-- Open Graph Meta Tags -->
-		<meta property="og:type" content="website" />
-		<meta property="og:locale" content="en_US" />
-		<meta property="og:image" content="https://yogaprastyo.com/android-chrome-512x512.png" />
-		<meta property="og:site_name" content="Yoga Prastyo" />
-		<meta property="og:title" content="Yoga Prastyo - Portfolio of Yoga Prastyo Bayu Laksono" />
-		<meta property="og:url" content="https://yogaprastyo.com" />
-		<meta
-			property="og:description"
-			content="Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Full Stack Developer specializing in both front-end and back-end web development. Passionate about creating dynamic, functional websites, I continuously learn to stay updated with industry trends. Explore my portfolio to see my work."
-		/>
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="https://yogaprastyo.com/android-chrome-512x512.png" />
+        <meta property="og:site_name" content="Yoga Prastyo" />
+        <meta property="og:title" content="Yoga Prastyo | Full Stack Developer Portfolio" />
+        <meta property="og:url" content="https://yogaprastyo.com" />
+        <meta
+            property="og:description"
+            content="Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Full Stack Developer with expertise in both front-end and back-end web development. With hands-on experience in Laravel, React, JavaScript, and system programming using C++ and ROS, I am eager to contribute to innovative projects and grow as a versatile software engineer."
+        />
 
-		<!-- ***Style*** -->
-		<link rel="stylesheet" href="assets/css/style.css" />
-	</head>
+        <!-- Twitter Card meta tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Yoga Prastyo | Full Stack Developer Portfolio" />
+        <meta
+            name="twitter:description"
+            content="Full Stack Developer with expertise in web development and system programming. Hands-on experience in Laravel, React, JavaScript, C++ and ROS. Explore my portfolio and projects."
+        />
+        <meta name="twitter:image" content="https://yogaprastyo.com/android-chrome-512x512.png" />
 
-	<body>
-		<!-- ***Header*** -->
-		<header>
-			<div class="container">
-				<!-- ***Headline*** -->
-				<div class="headline">
-					<h1 class="logo">Yoga<span>Pras.</span></h1>
-					<div class="message">
-						<ul>
-							<li>Welcome To<br />my web portfolio</li>
-						</ul>
-						<ul>
-							<li>Thank you<br />for visiting my website</li>
-						</ul>
-						<ul>
-							<li class="year"></li>
-						</ul>
-					</div>
-					<div class="btn-group">
-						<button class="link-to" data-target-id="contact">Contact</button>
-						<button class="link-to" data-target-id="about">Me</button>
-					</div>
-				</div>
+        <!-- Additional SEO meta tags -->
+        <meta
+            name="keywords"
+            content="Full Stack Developer, Web Developer, Software Engineer, JavaScript, React.js, PHP, Laravel, C++, ROS, System Programming, Portfolio, Indonesia"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
-				<!-- ***Jumbotron*** -->
-				<div class="jumbotron">
-					<h1>What are you looking for?</h1>
-					<p>Full Stack Developer<span>.</span></p>
-					<p>Click the "Get started" button to scroll down</p>
-					<div class="link-to" data-target-id="thank-you-note">
-						<button>Get started</button>
-						<button aria-label="scroll-to-down">
-							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none">
-								<path
-									d="M7.89629 17.7676L15.1162 10.5477L14.0982 9.52965L8.61829 15.0023L8.61829 0.439777L7.1743 0.439777L7.1743 15.0023L1.69439 9.52965L0.676379 10.5477L7.89629 17.7676Z"
-									fill="black"
-								/>
-							</svg>
-						</button>
-					</div>
-				</div>
-			</div>
+        <!-- Schema.org JSON-LD structured data -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Yoga Prastyo Bayu Laksono",
+                "alternateName": "Yoga Prastyo",
+                "url": "https://yogaprastyo.com",
+                "image": "https://yogaprastyo.com/assets/img/yoga-prastyo.jpg",
+                "jobTitle": "Full Stack Developer",
+                "description": "Full Stack Developer with expertise in both front-end and back-end web development. Hands-on experience in Laravel, React, JavaScript, and system programming using C++ and ROS",
+                "knowsAbout": [
+                    "JavaScript",
+                    "React.js",
+                    "PHP",
+                    "Laravel",
+                    "C++",
+                    "ROS",
+                    "System Programming",
+                    "TypeScript",
+                    "Node.js",
+                    "MySQL",
+                    "Web Development",
+                    "Software Engineering"
+                ],
+                "sameAs": [
+                    "https://www.instagram.com/aau.aah",
+                    "https://www.linkedin.com/in/yogaprastyoo",
+                    "https://github.com/yogaprastyoo",
+                    "https://www.dicoding.com/users/yogaprastyoo"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Professional"
+                }
+            }
+        </script>
 
-			<!-- ***Navigation*** -->
-			<nav class="container">
-				<ul>
-					<li class="link-to" data-target-id="about">
-						<span>About</span>
-					</li>
-					<li class="link-to" data-target-id="skills">
-						<span>Skills</span>
-					</li>
-					<li class="link-to" data-target-id="project">
-						<span>Project</span>
-					</li>
-					<li class="link-to" data-target-id="contact">
-						<span>Contact</span>
-					</li>
-				</ul>
-			</nav>
-		</header>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
 
-		<!-- ***Main*** -->
-		<main class="container">
-			<!-- ***ThankYouNote Article*** -->
-			<article id="thank-you-note">
-				<h1>THANK YOU FOR VISITING MY <span>WEBSITE</span></h1>
-				<p id="date"></p>
-			</article>
+    <body>
+        <!-- Skip to main content link for screen readers -->
+        <a href="#main-content" class="skip-link" aria-label="Skip to main content">Skip to main content</a>
 
-			<!-- ***About Article*** -->
-			<article id="about">
-				<h1 class="title">
-					01/ <br />
-					GET TO KNOW ME
-				</h1>
-				<section class="profile">
-					<img src="assets/img/profile.jpg" alt="Yoga Prastyo Bayu Laksono" />
-					<p>Pras.</p>
-				</section>
-				<section class="badge-container">
-					<div class="badge">18y</div>
-					<div class="badge">Student</div>
-					<div class="badge">Web Dev</div>
-				</section>
-				<div class="desc">
-					Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Full Stack Developer specializing in both front-end and
-					back-end web development. Passionate about creating dynamic, functional websites, I continuously learn to stay
-					updated with industry trends. Explore my portfolio to see my work.
-				</div>
-			</article>
+        <!-- ***Header*** -->
+        <header role="banner">
+            <div class="container">
+                <!-- ***Headline*** -->
+                <section class="headline" aria-labelledby="site-logo">
+                    <div class="headline__logo" id="site-logo">Yoga<span>Pras.</span></div>
+                    <div class="headline__message" aria-label="Welcome messages">
+                        <ul role="list">
+                            <li>Welcome To<br />my web portfolio</li>
+                        </ul>
+                        <ul role="list">
+                            <li>Thank you<br />for visiting my website</li>
+                        </ul>
+                        <ul role="list">
+                            <li class="year" aria-label="Current year"></li>
+                        </ul>
+                    </div>
+                    <div class="headline__btn-group" role="group" aria-label="Main navigation buttons">
+                        <a
+                            href="#contact"
+                            class="headline__btn link-to"
+                            data-target-id="contact"
+                            title="Navigate to contact section"
+                            >Contact</a
+                        >
+                        <a
+                            href="#about"
+                            class="headline__btn link-to"
+                            data-target-id="about"
+                            title="Navigate to about section"
+                            >Me</a
+                        >
+                    </div>
+                </section>
 
-			<!-- ***Skills Article*** -->
-			<article id="skills">
-				<h1 class="title">
-					02/ <br />
-					SKILLS & TECHNOLOGIES
-				</h1>
-				<section class="badge-container">
-					<div class="badge">PHP</div>
-					<div class="badge">JavaScript</div>
-					<div class="badge">TypeScript</div>
-					<div class="badge">Node.js</div>
-					<div class="badge">Express.js</div>
-					<div class="badge">Laravel</div>
-					<div class="badge">Next.js</div>
-					<div class="badge">MySQL</div>
-					<div class="badge">Postgres</div>
-					<div class="badge">Git</div>
-					<div class="badge">Docker</div>
-				</section>
+                <!-- ***Jumbotron*** -->
+                <section class="jumbotron" aria-labelledby="jumbotron-title">
+                    <h1 id="jumbotron-title" class="jumbotron__title">What are you looking for?</h1>
+                    <p class="jumbotron__subtitle" aria-label="Professional title">
+                        Full Stack Developer<span>.</span>
+                    </p>
+                    <p class="jumbotron__description">Click the "Get started" button to scroll down</p>
+                    <div
+                        class="jumbotron__cta link-to"
+                        data-target-id="thank-you-note"
+                        role="group"
+                        aria-label="Call to action buttons"
+                    >
+                        <button
+                            class="jumbotron__btn jumbotron__btn--primary"
+                            title="Navigate to the main content sections"
+                        >
+                            Get started
+                        </button>
+                        <button
+                            class="jumbotron__btn jumbotron__btn--secondary"
+                            aria-label="Scroll down to main content"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="18"
+                                viewBox="0 0 16 18"
+                                fill="none"
+                                role="img"
+                                aria-label="Down arrow icon"
+                            >
+                                <path
+                                    d="M7.89629 17.7676L15.1162 10.5477L14.0982 9.52965L8.61829 15.0023L8.61829 0.439777L7.1743 0.439777L7.1743 15.0023L1.69439 9.52965L0.676379 10.5477L7.89629 17.7676Z"
+                                    fill="black"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+            </div>
 
-				<section class="learn">
-					<p>
-						Other Things <br />
-						I Want To Learn <span>:</span>
-					</p>
-					<div class="badge-container">
-						<div class="badge">Go</div>
-						<div class="badge">Java</div>
-						<div class="badge">C++</div>
-						<div class="badge">Vue</div>
-						<div class="badge">Nuxt.js</div>
-						<div class="badge">Spring Boot</div>
-						<div class="badge">MongoDB</div>
-					</div>
-				</section>
-			</article>
+            <!-- ***Navigation*** -->
+            <nav class="navigation container" role="navigation" aria-label="Main navigation">
+                <ul class="navigation__list" role="menubar">
+                    <li class="navigation__item" role="none">
+                        <a
+                            href="#about"
+                            class="navigation__link link-to"
+                            data-target-id="about"
+                            role="menuitem"
+                            title="Learn about my background and experience"
+                            ><span>About</span></a
+                        >
+                    </li>
+                    <li class="navigation__item" role="none">
+                        <a
+                            href="#skills"
+                            class="navigation__link link-to"
+                            data-target-id="skills"
+                            role="menuitem"
+                            title="View my technical skills and technologies"
+                            ><span>Skills</span></a
+                        >
+                    </li>
+                    <li class="navigation__item" role="none">
+                        <a
+                            href="#project"
+                            class="navigation__link link-to"
+                            data-target-id="project"
+                            role="menuitem"
+                            title="Explore my latest projects and work"
+                            ><span>Project</span></a
+                        >
+                    </li>
+                    <li class="navigation__item" role="none">
+                        <a
+                            href="#contact"
+                            class="navigation__link link-to"
+                            data-target-id="contact"
+                            role="menuitem"
+                            title="Get in touch with me"
+                            ><span>Contact</span></a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-			<!-- ***Project Article*** -->
-			<article id="project">
-				<h1 class="title">
-					03/ <br />
-					CHECK OUT MY LATEST WORK
-				</h1>
-				<section>
-					<h2>Project LATEST</h2>
-					<div class="card">
-						<h3>01</h3>
-						<div class="desc">
-							<h4>Cashier</h4>
-							<p>Building a POS website for the school coffee shop using Laravel and Livewire.</p>
-						</div>
-					</div>
-					<div class="card">
-						<h3>02</h3>
-						<div class="desc">
-							<h4>Citizen Care</h4>
-							<p>Developing Citizen Care using Laravel and Livewire to practice these frameworks.</p>
-						</div>
-					</div>
-					<div class="card">
-						<h3>03</h3>
-						<div class="desc">
-							<h4>Anime List</h4>
-							<p>Creating an Anime List using Next.js and DaisyUI to learn Next.js.</p>
-						</div>
-					</div>
-					<div class="card">
-						<h3>04</h3>
-						<div class="desc">
-							<h4>Attendance</h4>
-							<p>Building an attendance system with Laravel and Filament for a student exchange with Vietnam.</p>
-						</div>
-					</div>
-					<div class="card">
-						<p>
-							LET'S TURN YOUR <br />
-							IDEAS INTO REALITY
-						</p>
-					</div>
-				</section>
-			</article>
+        <!-- ***Main*** -->
+        <main id="main-content" class="container" role="main" aria-label="Main content">
+            <!-- ***ThankYouNote Article*** -->
+            <article id="thank-you-note" class="section--thank-you" aria-labelledby="thank-you-title">
+                <h2 id="thank-you-title" class="title">THANK YOU FOR VISITING MY <span>WEBSITE</span></h2>
+                <p id="date" class="date" aria-label="Current date"></p>
+            </article>
 
-			<!-- ***Contact Article*** -->
-			<article id="contact">
-				<h1 class="title">
-					04/ <br />
-					LET'S TURN IDEAS INTO REALITY
-				</h1>
-				<section class="sosmed-container">
-					<a
-						href="https://www.instagram.com/aau.aah"
-						target="_blank"
-						class="sosmed"
-						rel="noopener noreferrer"
-						title="Follow me on Instagram"
-					>
-						<p>Instagram</p>
-						<img src="assets/img/icon-arrow-diagonal-up-right.svg" alt="Arrow icon pointing up and right" />
-					</a>
-					<a
-						href="https://www.facebook.com/"
-						target="_blank"
-						class="sosmed"
-						rel="noopener noreferrer"
-						title="Follow me on Facebook"
-					>
-						<p>Facebook</p>
-						<img class="tes" src="assets/img/icon-arrow-diagonal-up-right.svg" alt="Arrow icon pointing up and right" />
-					</a>
-					<a
-						href="https://www.linkedin.com/in/yogaprastyoo"
-						target="_blank"
-						class="sosmed"
-						rel="noopener noreferrer"
-						title="Connect with me on LinkedIn"
-					>
-						<p>LinkedIn</p>
-						<img src="assets/img/icon-arrow-diagonal-up-right.svg" alt="Arrow icon pointing up and right" />
-					</a>
-					<a
-						href="https://github.com/yogaprastyoo"
-						target="_blank"
-						class="sosmed"
-						rel="noopener noreferrer"
-						title="Check my projects on GitHub"
-					>
-						<p>GitHub</p>
-						<img src="assets/img/icon-arrow-diagonal-up-right.svg" alt="Arrow icon pointing up and right" />
-					</a>
-				</section>
-			</article>
+            <!-- ***About Article*** -->
+            <article id="about" class="section" aria-labelledby="about-title">
+                <h2 id="about-title" class="main-title">
+                    01/ <br />
+                    GET TO KNOW ME
+                </h2>
+                <section class="profile" aria-labelledby="profile-heading">
+                    <h3 id="profile-heading" class="sr-only">Profile Information</h3>
+                    <img
+                        src="assets/img/yoga-prastyo.jpg"
+                        alt="Yoga Prastyo Bayu Laksono - Full Stack Developer"
+                        class="profile__image"
+                    />
+                    <p class="profile__name" aria-label="Nickname">Pras.</p>
+                </section>
+                <section class="badge-container" aria-labelledby="badges-heading">
+                    <h3 id="badges-heading" class="sr-only">Quick Facts</h3>
+                    <div class="badge" id="age-badge" aria-label="Age">19y</div>
+                    <div class="badge" aria-label="Current status">Student</div>
+                    <div class="badge" aria-label="Profession">Web Dev</div>
+                    <div class="badge" aria-label="Interest area">Robotics</div>
+                </section>
+                <div class="description" aria-labelledby="description-heading">
+                    <h3 id="description-heading" class="sr-only">About Me Description</h3>
+                    Hello! I'm Yoga Prastyo Bayu Laksono, an aspiring Full Stack Developer with expertise in both
+                    front-end and back-end web development. I am passionate about building dynamic and functional
+                    websites, and continuously strive to stay updated with the latest industry trends and best
+                    practices. With hands-on experience in Laravel, React, JavaScript, and system programming using C++
+                    and ROS, I am eager to contribute to innovative projects and grow as a versatile software engineer.
+                </div>
+            </article>
 
-			<!-- ***ScrollTop*** -->
-			<div class="scroll-top">
-				<button aria-label="scroll-to-top">
-					<svg
-						id="scroll-top"
-						width="100%"
-						height="100%"
-						viewBox="0 0 50 50"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<rect x="0.5" y="0.5" width="97%" height="97%" rx="24.5" fill="" stroke="currentColor" />
-						<path
-							d="M25 16L17 23.5L18.128 24.5575L24.2 18.8725V34H25.8V18.8725L31.872 24.5575L33 23.5L25 16Z"
-							fill="currentColor"
-						/>
-					</svg>
-				</button>
-			</div>
-		</main>
+            <!-- ***Skills Article*** -->
+            <article id="skills" class="section" aria-labelledby="skills-title">
+                <h2 id="skills-title" class="main-title">
+                    02/ <br />
+                    SKILLS & TECHNOLOGIES
+                </h2>
+                <section class="skills__section" aria-labelledby="current-skills-heading">
+                    <h3 id="current-skills-heading" class="sr-only">Current Technical Skills</h3>
+                    <div class="badge-container" role="list" aria-label="Technical skills I currently use">
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">PHP</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">JavaScript</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">React.js</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">C++</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">ROS</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">TypeScript</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Node.js</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Express.js</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Laravel</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">MySQL</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Postgres</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Git</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Docker</div>
+                    </div>
+                </section>
 
-		<!-- ***Footer*** -->
-		<footer>
-			<a href="https://www.instagram.com/aau.aah/" target="_blank"> Yoga Prastyo </a>
-			<span class="year"></span> | ALL RIGHTS RESERVED ©
-		</footer>
+                <section class="skills__learn" aria-labelledby="future-skills-heading">
+                    <h3 id="future-skills-heading" class="skills__learn-title">
+                        Other Things <br />
+                        I Want To Learn <span>:</span>
+                    </h3>
+                    <div class="badge-container" role="list" aria-label="Technologies I want to learn">
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Next.js</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Kubernetes</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">DevOps</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Go</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Java</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Vue</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Nuxt.js</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">Spring Boot</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">MongoDB</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">AWS</div>
+                        <div class="badge badge--interactive" role="listitem" tabindex="0">CI/CD</div>
+                    </div>
+                </section>
+            </article>
 
-		<!-- ***CursorRing*** -->
-		<div id="cursor-ring"></div>
+            <!-- ***Project Article*** -->
+            <article id="project" class="section">
+                <h2 class="main-title">
+                    03/ <br />
+                    CHECK OUT MY LATEST WORK
+                </h2>
+                <section class="project__grid">
+                    <h2 class="project__title">Project LATEST</h2>
+                    <div class="project__card">
+                        <span class="project__number">01</span>
+                        <div>
+                            <h3 class="project__card-title">Cashier</h3>
+                            <p class="project__card-description">
+                                Building a POS website for the school coffee shop using Laravel and Livewire.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <span class="project__number">02</span>
+                        <div>
+                            <h3 class="project__card-title">Citizen Care</h3>
+                            <p class="project__card-description">
+                                Developing Citizen Care using Laravel and Livewire to practice these frameworks.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <span class="project__number">03</span>
+                        <div>
+                            <h3 class="project__card-title">Anime List</h3>
+                            <p class="project__card-description">
+                                Creating an Anime List using Next.js and DaisyUI to learn Next.js.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <span class="project__number">04</span>
+                        <div>
+                            <h3 class="project__card-title">Attendance</h3>
+                            <p class="project__card-description">
+                                Building an attendance system with Laravel and Filament for a student exchange with
+                                Vietnam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project__card project__card--cta">
+                        <p>
+                            LET'S TURN YOUR <br />
+                            IDEAS INTO REALITY
+                        </p>
+                    </div>
+                </section>
+            </article>
 
-		<!-- ***Script*** -->
-		<script src="assets/js/script.js"></script>
-	</body>
+            <!-- ***Contact Article*** -->
+            <article id="contact" class="section">
+                <h2 class="main-title">
+                    04/ <br />
+                    LET'S TURN IDEAS INTO REALITY
+                </h2>
+                <section class="contact__social-container">
+                    <a
+                        href="https://www.instagram.com/aau.aah"
+                        target="_blank"
+                        class="contact__social-link"
+                        rel="noopener noreferrer"
+                        title="Follow me on Instagram"
+                    >
+                        <p class="contact__social-text">Instagram</p>
+                        <img
+                            src="assets/img/icon-arrow-diagonal-up-right.svg"
+                            alt="Arrow icon pointing up and right"
+                            class="contact__social-icon"
+                        />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/yogaprastyoo"
+                        target="_blank"
+                        class="contact__social-link"
+                        rel="noopener noreferrer"
+                        title="Connect with me on LinkedIn"
+                    >
+                        <p class="contact__social-text">LinkedIn</p>
+                        <img
+                            src="assets/img/icon-arrow-diagonal-up-right.svg"
+                            alt="Arrow icon pointing up and right"
+                            class="contact__social-icon"
+                        />
+                    </a>
+                    <a
+                        href="https://github.com/yogaprastyoo"
+                        target="_blank"
+                        class="contact__social-link"
+                        rel="noopener noreferrer"
+                        title="Check my projects on GitHub"
+                    >
+                        <p class="contact__social-text">GitHub</p>
+                        <img
+                            src="assets/img/icon-arrow-diagonal-up-right.svg"
+                            alt="Arrow icon pointing up and right"
+                            class="contact__social-icon"
+                        />
+                    </a>
+                    <a
+                        href="mailto:mail@yogaprastyo.com"
+                        target="_blank"
+                        class="contact__social-link"
+                        rel="noopener noreferrer"
+                        title="Send me an email"
+                    >
+                        <p class="contact__social-text">Email</p>
+                        <img
+                            src="assets/img/icon-arrow-diagonal-up-right.svg"
+                            alt="Arrow icon pointing up and right"
+                            class="contact__social-icon"
+                        />
+                    </a>
+                </section>
+            </article>
+
+            <!-- ***ScrollTop*** -->
+            <div class="scroll-to-top">
+                <button class="scroll-to-top__button" aria-label="scroll-to-top">
+                    <svg
+                        id="scroll-to-top"
+                        class="scroll-to-top__icon"
+                        width="100%"
+                        height="100%"
+                        viewBox="0 0 50 50"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <rect x="0.5" y="0.5" width="97%" height="97%" rx="24.5" fill="" stroke="currentColor" />
+                        <path
+                            d="M25 16L17 23.5L18.128 24.5575L24.2 18.8725V34H25.8V18.8725L31.872 24.5575L33 23.5L25 16Z"
+                            fill="currentColor"
+                        />
+                    </svg>
+                </button>
+            </div>
+        </main>
+
+        <!-- ***Footer*** -->
+        <footer class="footer">
+            <a href="https://github.com/yogaprastyoo" target="_blank" class="footer__link"> Yoga Prastyo </a>
+            <span class="year">2025</span> | ALL RIGHTS RESERVED ©
+        </footer>
+
+        <!-- ***CursorRing*** -->
+        <div id="cursor-ring" class="cursor-ring"></div>
+
+        <!-- ***Script*** -->
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
