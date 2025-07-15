@@ -1,7 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /assets/js/
-Disallow: /assets/css/
 
 # Sitemap
 Sitemap: https://yogaprastyo.com/sitemap.xml
